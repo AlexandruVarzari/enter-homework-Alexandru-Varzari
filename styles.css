@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+  background-color: #272829;
+  font-family: "Rubik", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.first-nav {
+  color: #404040;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0 20px;
+}
+.square {
+  height: 25px;
+  width: 25px;
+  background-color: #404040;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+.circle {
+  height: 15px;
+  width: 15px;
+  background-color: #5cba48;
+  border-radius: 50%;
+}
+.logo-enter {
+  width: 30px;
+}
+input {
+  background-color: #404040;
+}
+.padding-svg {
+  padding-right: 10px;
+}
+.padding-svg-second {
+  padding-right: 40px;
+}
+.search {
+  width: 100%;
+  display: flex;
+  background-color: #202020;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #404040;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #202020;
+}
+
+.searchTerm:focus {
+  color: #202020;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #404040;
+  background: #404040;
+  text-align: center;
+  color: #202020;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+}
+.second-nav {
+  background-color: #202020;
+  color: #808080;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.second-nav-icons {
+  display: flex;
+}
+.section-hero {
+  text-align: center;
+  color: #ffffff;
+}
+.white {
+  color: #ffffff;
+}
+.grey {
+  color: #808080;
+}
+.img-hero-section {
+  max-width: 100%;
+  border-radius: 12px;
+}
+.container-product {
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-radius: 12px;
+}
+.container-product-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.product-img-phone {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+.glow {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(
+    0 0 40px rgba(255, 165, 0, 0.5)
+  ); /* Adjust the alpha value (0.5) for transparency */
+}
+
+.padding-extra {
+  padding: 0 20px;
+}
+.plus-sign {
+  color: #f47621;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.product-phone-specs {
+  display: flex;
+}
+
+.product-phone-specs ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-phone-specs li {
+  margin-right: 10px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.circle-red {
+  background-color: #703d66;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+}
+.circle-black {
+  background-color: #000000;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+}
+.circle-yellow {
+  background-color: #edc363;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+}
+.circle-grey {
+  background-color: #aaa9ad;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+}
+
+.padding-top {
+  padding-top: 10px;
+}
+.margin-top {
+  margin-top: 10px;
+}
+.margin-btm {
+  margin-bottom: 20px;
+}
+.margin-btm-tp {
+  margin: 50px 0;
+}
+
+.btn {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 200px;
+}
+
+.btn5:hover,
+.btn:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+.box1 {
+  background-color: #404040;
+  color: #808080;
+  border-radius: 10px;
+  padding: 5px;
+}
+.box2 {
+  background-color: #808080;
+  border-radius: 10px;
+  padding: 5px;
+}
+.news-letter {
+  display: flex;
+  align-items: center;
+  background-color: #202020;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.news-letter-img {
+  max-width: 80%;
+}
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form-field {
+  margin: 5px;
+}
+
+.form-field input {
+  width: 200px;
+  padding: 13px 5px;
+  border: none;
+  border-radius: 12px;
+}
+
+.form-field label {
+  margin-right: 5px;
+}
+
+.form-checkbox {
+  display: flex;
+}
+
+.form-checkbox input {
+  margin-right: 5px;
+}
+
+.form-submit {
+  margin-left: 20px;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #2f80ed;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.form-submit:hover {
+  background-color: #1366d6;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.35s;
+}
+
+.form-submit:hover:after {
+  opacity: 0.5;
+}
+
+.form-submit:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: 0.35s;
+}
+
+.form-submit:active:after {
+  opacity: 1;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ccc;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 40px;
+  margin-bottom: 20px;
+}
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+}
+.span-footer {
+  font-weight: bold;
+}
+
+/* Phone layout */
+@media only screen and (min-width: 800px) {
+  .mobile-section {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .first-nav {
+    display: none;
+  }
+  .second-nav {
+    display: none;
+  }
+  .section-hero {
+    display: none;
+  }
+  .container-product {
+    display: none;
+  }
+  .news-letter {
+    display: none;
+  }
+  .social-links {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .footer-items {
+    display: none;
+  }
+}
+.mobile-section {
+  margin: 20px;
+}
+.logo-enter-mobile {
+  width: 30px;
+}
+.nav-mobile {
+  background-color: #202020;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mobile-hero-section {
+  color: white;
+}
+.container-product-mobile {
+  background-color: #202020;
+  padding: 50px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.container-items-mobile {
+  position: relative;
+}
+.product-img-mobile {
+  max-width: 50%;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+}
+
+.news-letter-form-mobile {
+  margin-top: 200px;
+  background-color: #202020;
+  padding: 50px;
+  border-radius: 12px;
+}
+.mobile-btn {
+  margin: 25px 0;
+}
+.social-links-mobile {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.bg-footer-mobile {
+  background-color: #202020;
+  border-radius: 12px;
+  padding: 20px 0;
+  padding-right: 30px;
+}
+.footer-nav-mobile {
+  background-color: #202020;
+  color: #404040;
+  padding: 20px;
+  border-radius: 12px;
+}
